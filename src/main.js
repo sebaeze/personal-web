@@ -6,6 +6,8 @@ const App = () =>{
     <div>
       <h1>Personal web para Sebastian Andreoletti</h1>
       <h2>Test de react con Parcel</h2>
+      <br/>
+      <p>nose que haremos ahora</p>
     </div>
   )
 };
