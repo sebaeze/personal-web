@@ -1,0 +1,7 @@
+---
+applications:
+- name: seaPersonalWeb
+  host: seaPersonalWeb
+  domain: mybluemix.net
+  memory: 512M
+  timeout: 180
