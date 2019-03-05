@@ -5,17 +5,12 @@
   "dependencies": {
     "express": "^4.16.4",
     "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-scripts": "^2.1.5"
+    "react-dom": "^16.8.3"
   },
   "scripts": {
     "start": "node server.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
   },
   "browserslist": [
     ">0.2%",
