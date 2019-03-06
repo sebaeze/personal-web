@@ -9,6 +9,7 @@
     "react-dom": "^16.8.3"
   },
   "scripts": {
+    "cleanup":"rm -r .cache",
     "start": "node server.js",
     "dev": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html"
