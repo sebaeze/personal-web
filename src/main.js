@@ -1,15 +1,25 @@
-import React from "react";
-import { render } from "react-dom";
-
+import React    from "react";
+import ReactDOM from "react-dom";
+import Header   from "./componentes/Header";
+//
 const App = () =>{
   return (
-    <div>
-      <h1>Personal web para Sebastian Andreoletti</h1>
-      <h2>Test de react con Parcel</h2>
-      <br/>
-      <p>nose que haremos ahora</p>
+    <div className="container">
+      <div className="row">
+        <Header />
+      </div>
+      <div className="row bg-light">
+        <div className="wp-body mt-200">
+          <br/><br/><br/><br/><br/><br/><br/>
+          <h1 className="font-roboto-mono">En Construcción</h1>
+        </div>
+      </div>
     </div>
   )
 };
 
-render(<App />, document.getElementById("app"));
+//render(<App />, document.getElementById("app"));
+ReactDOM.render(
+  <App />,
+  document.getElementById("app")
+);

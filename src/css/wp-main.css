@@ -1,0 +1,27 @@
+/*
+*   Header para web personal
+*/
+/*
+* Fonts
+*/
+/* @import url('https://fonts.googleapis.com/css?family=Ubuntu') ; */
+/* */
+.font-roboto-mono {
+    font-family: 'Roboto Mono', monospace;
+}
+/*
+*
+*/
+body { padding-top: 15vh; } /* para continuar despues del header */
+.navbar {
+    min-height: 15vh;
+}
+.navbar a{
+    font-size: 35px;
+}
+.wp-body {
+    height: 100vh ;
+}
+.wp-body h1{
+    font-size: 120px ;
+}

@@ -19,7 +19,7 @@ SET cf_password=
 SET /P cf_email=Ingresar email:  
 IF "%cf_email%"=="" GOTO Error
 
-SET /P cf_password=Ingresar password para user: "%cf_email%"  
+SET /P cf_password=Ingresar password para user: "%cf_email%" 
 IF "%cf_password%"=="" GOTO Error
 
 
@@ -32,12 +32,11 @@ ibmcloud login -u %cf_email%  -p %cf_password% --no-iam
 echo "ibmcloud config --check-version=false"
 ibmcloud config --check-version=false
 
-
 echo "ibmcloud target   -o %cf_org% -r %cf_region% -s %cf_space%"
 ibmcloud target  -o %cf_org% -r %cf_region% -s %cf_space%
 
-echo "ibmcloud cf push personalWeb -f manifest.yml -t 180"
-ibmcloud cf push personalWeb       -f manifest.yml -t 180
+echo "ibmcloud cf push andreoletti-webpage -f manifest.yml -t 180"
+ibmcloud cf push andreoletti-webpage   -f manifest.yml -t 180
 
 GOTO End
 

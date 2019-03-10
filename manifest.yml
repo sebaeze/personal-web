@@ -1,7 +1,7 @@
 ---
 applications:
-- name: seaPersonalWeb
-  host: seaPersonalWeb
+- name: andreoletti-webpage
+  host: andreoletti-webpage
   domain: mybluemix.net
   memory: 512M
   timeout: 180

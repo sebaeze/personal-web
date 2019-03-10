@@ -13,5 +13,9 @@ app.get('/', function (req, res) {
 /*
 *
 */
-app.listen(process.env.PORT || 8080);
+let puerto = process.env.PORT || 3000  ;
+app.listen(puerto,function(){
+  console.log('....listen server on http://localhost:'+puerto) ;
+});
+
 //
