@@ -6,17 +6,17 @@ var favicon      = require('serve-favicon');
 /*
 *
 */
+/*
 app.enable('trust proxy') ;  // Fuerza el uso de protocolo seguro -> https://....
 app.use (function (req, res, next) {
   if (req.secure) {
     console.log("...no se usa protocoo seguro !!") ;
     next();
   } else {
-    // request was via http, so redirect to https
     res.redirect('https://' + req.headers.host + req.url);
   }
 });
-
+*/
 //
 app.use(express.static(path.join(__dirname, 'dist')));
 //
