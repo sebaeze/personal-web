@@ -6,6 +6,18 @@ var favicon      = require('serve-favicon');
 /*
 *
 */
+app.enable('trust proxy') ;  // Fuerza el uso de protocolo seguro -> https://....
+app.use (function (req, res, next) {
+  if (req.secure) {
+    console.log("...no se usa protocoo seguro !!") ;
+    next();
+  } else {
+    // request was via http, so redirect to https
+    res.redirect('https://' + req.headers.host + req.url);
+  }
+});
+
+//
 app.use(express.static(path.join(__dirname, 'dist')));
 //
 app.get('/', function (req, res) {
@@ -32,6 +44,7 @@ app.use(function(err, req, res, next) {
     res.redirect('/error?mensaje='+mensajeError) ;
 });
 //
+/*
 app.use(function(req, res, next) {
     console.log(' \n *** ERROR - 404 --> url: '+req.originalUrl+' *** \n');
     let flagAceptaJspon = ( req.headers.accept.toUpperCase().indexOf('APPLICATION/JSON')!=-1 ) ;
@@ -43,6 +56,7 @@ app.use(function(req, res, next) {
     }
     res.redirect('/error?mensaje=Url: '+req.originalUrl+' no fue encontrada.') ;
 });
+*/
 /*
 *
 */
