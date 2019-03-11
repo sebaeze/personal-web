@@ -20,12 +20,9 @@
     font-size: 35px;
 }
 .wp-body {
-    height: 100vh ;
+    height: 84vh ;
 }
-.wp-body h1{
-    font-size: 120px ;
-}
-.wp-en-construccion {
-    margin-left: 35%;
-    width: 100%;
+.wp-body span {
+    line-height: 70vh ;
+    font-size: 40px ;
 }
