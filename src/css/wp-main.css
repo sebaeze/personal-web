@@ -12,7 +12,7 @@
 /*
 *
 */
-body { padding-top: 15vh; } /* para continuar despues del header */
+/*  body { padding-top: 15vh; } para continuar despues del header */
 .navbar {
     min-height: 15vh;
 }
@@ -24,4 +24,8 @@ body { padding-top: 15vh; } /* para continuar despues del header */
 }
 .wp-body h1{
     font-size: 120px ;
+}
+.wp-en-construccion {
+    margin-left: 35%;
+    width: 100%;
 }
