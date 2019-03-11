@@ -9,7 +9,7 @@ const App = () =>{
         <Header />
         <div className="row wp-body">
           <div className="col"></div>
-          <div className="col">
+          <div className="col wp-div-en-construccion">
             <span className="font-roboto-mono align-middle">En Construcción</span>
           </div>
           <div className="col"></div>

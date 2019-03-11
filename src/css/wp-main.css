@@ -19,10 +19,60 @@
 .navbar a{
     font-size: 35px;
 }
-.wp-body {
-    height: 84vh ;
+/*  */
+@media screen and (max-height: 900px){
+    .wp-body {
+        height: 84vh ;
+    }
 }
-.wp-body span {
-    line-height: 70vh ;
-    font-size: 40px ;
+@media screen and (max-height: 800px){
+    .wp-body {
+        height: 80vh ;
+    }
+}
+@media screen and (max-height: 760px){
+    .wp-body {
+        height: 78vh ;
+    }
+}
+@media screen and (max-height: 660px){
+    .wp-body {
+        height: 74vh ;
+    }
+}
+@media screen and (max-height: 400px){
+    .wp-body {
+        height: 70vh ;
+    }
+}
+/*  */
+@media (max-width: 2500px) {
+    .wp-body span {
+        line-height: 70vh ;
+        font-size: 40px ;
+    }
+}
+@media (max-width: 1290px) {
+    .wp-body span {
+        line-height: 70vh ;
+        font-size: 40px ;
+    }
+}
+@media (max-width: 800px) {
+    .wp-body span {
+        line-height: 70vh ;
+        font-size: 20px ;
+    }
+}
+@media (max-width: 400px) {
+    .wp-body span {
+        line-height: 5vh ;
+        font-size: 25px ;
+    }
+}
+/* */
+.wp-nombre {
+    word-wrap: break-word;
+    white-space: initial;
+    font-size: 24px;
 }
