@@ -5,15 +5,17 @@ import Footer   from "./componentes/Footer";
 //
 const App = () =>{
   return (
-    <section id="body" className="wrapper-body bg-light">
-      <div className="container-fluid">
-        <Header />
-        <div className="row wp-body">
-          <span className="font-roboto-mono align-middle span-en-construccion">En Construcción</span>
+    <div id="divWrapperPAgina" className="container-fluid">
+      <Header />
+      <section id="body" className="wrapper-body bg-light">
+        <div className="container-fluid">
+          <div className="row wp-body">
+            <span className="font-roboto-mono align-middle span-en-construccion">En Construcción</span>
+          </div>
         </div>
-        <Footer />
-      </div>
-    </section>
+      </section>
+      <Footer />
+    </div>
   )
 };
 //
