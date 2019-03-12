@@ -96,6 +96,13 @@
     .span-en-construccion {
         font-size: 40px !important;
         margin-left: 5%;
+        line-height: 8vh !important;
+    }
+    .wp-nombre {
+        word-wrap: break-word;
+        white-space: initial;
+        font-size: 30px !important;
+        line-height: normal ;
     }
 }
 /* */
