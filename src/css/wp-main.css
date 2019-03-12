@@ -1,6 +1,20 @@
 /*
 *   Header para web personal
 */
+/* */
+#header {
+    min-height: 100px;
+    line-height: 90px !important;
+    font-size: 60px;
+}
+/* */
+#body {
+
+}
+#footer {
+    min-height: 200px ;
+    font-size: 40px ;
+}
 /*
 * Fonts
 */
@@ -13,26 +27,32 @@
 *
 */
 /*  body { padding-top: 15vh; } para continuar despues del header */
-.navbar {
-    min-height: 15vh;
-}
-.navbar a{
-    font-size: 35px;
-}
 /*  */
 @media screen and (max-height: 900px){
     .wp-body {
         height: 84vh ;
+    }
+    .span-en-construccion {
+        font-size: 120px !important;
+        margin-left: 20%;
     }
 }
 @media screen and (max-height: 800px){
     .wp-body {
         height: 80vh ;
     }
+    .span-en-construccion {
+        font-size: 100px !important;
+        margin-left: 20%;
+    }
 }
 @media screen and (max-height: 760px){
     .wp-body {
         height: 78vh ;
+    }
+    .span-en-construccion {
+        font-size: 80px !important;
+        margin-left: 20%;
     }
 }
 @media screen and (max-height: 660px){
@@ -43,6 +63,10 @@
 @media screen and (max-height: 400px){
     .wp-body {
         height: 70vh ;
+    }
+    .span-en-construccion {
+        font-size: 80px !important;
+        margin-left: 20%;
     }
 }
 /*  */
@@ -66,13 +90,17 @@
 }
 @media (max-width: 400px) {
     .wp-body span {
-        line-height: 5vh ;
+        line-height: 12vh ;
         font-size: 25px ;
+    }
+    .span-en-construccion {
+        font-size: 40px !important;
+        margin-left: 5%;
     }
 }
 /* */
 .wp-nombre {
     word-wrap: break-word;
     white-space: initial;
-    font-size: 24px;
+    font-size: inherit;
 }

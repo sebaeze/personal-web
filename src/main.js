@@ -1,21 +1,19 @@
 import React    from "react";
 import ReactDOM from "react-dom";
 import Header   from "./componentes/Header";
+import Footer   from "./componentes/Footer";
 //
 const App = () =>{
   return (
-    <div className="wrapper-body bg-light">
+    <section id="body" className="wrapper-body bg-light">
       <div className="container-fluid">
         <Header />
         <div className="row wp-body">
-          <div className="col"></div>
-          <div className="col wp-div-en-construccion">
-            <span className="font-roboto-mono align-middle">En Construcción</span>
-          </div>
-          <div className="col"></div>
+          <span className="font-roboto-mono align-middle span-en-construccion">En Construcción</span>
         </div>
+        <Footer />
       </div>
-    </div>
+    </section>
   )
 };
 
