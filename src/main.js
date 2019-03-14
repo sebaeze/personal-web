@@ -10,7 +10,7 @@ const App = () =>{
       <section id="body" className="wrapper-body bg-light">
         <div className="container-fluid">
           <div className="row wp-body">
-            <span className="font-roboto-mono align-middle span-en-construccion">En Construcción</span>
+            <span className="font-roboto-mono align-middle span-en-construccion" id="About">En Construcción</span>
           </div>
         </div>
       </section>

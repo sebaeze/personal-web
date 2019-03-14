@@ -103,6 +103,14 @@
     font-size: 34px !important;
     font-weight: bolder !important ;
 }
+.wp-professional-description {
+    word-wrap: break-word;
+    white-space: initial;
+    line-height: 30px ;
+    font-size: 24px !important;
+    font-weight: normal;
+    font-style: italic ;
+}
 .span-en-construccion {
     line-height: 70vh ;
     font-size: 120px ;
