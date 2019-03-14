@@ -24,10 +24,12 @@ class Header extends Component {
               <span className="navbar-brand font-roboto-mono wp-nombre " href="/">Sebastian Andreoletti</span>
             </div>
             <div className="col">
-              <ul className="list-inline float-right">
-                <li className="list-inline-item"><a href="https://github.com/sebaeze"  target="_blank"><i className="fa fa-github"></i></a></li>
-                <li className="list-inline-item"><a href="https://ar.linkedin.com/in/sebastian-andreoletti-ba0a8728"  target="_blank"><i className="fa fa-linkedin"></i></a></li>
-              </ul>
+              <div className="container-fluid wp-pestanias">
+                <ul className="nav nav-pills float-right">
+                  <li className="nav-item"><a className="nav-link active"  href="#Contacto">Contacto</a></li>
+                  <li className="nav-item"><a className="nav-link"         href="#About">Acerca de mí</a></li>
+                </ul>
+              </div>
             </div>
         </section>
     )

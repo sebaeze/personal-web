@@ -20,7 +20,7 @@ class Header extends Component {
   render() {
     return (
         <section id="footer"  style={this.stilo1}>
-            <div className="container">
+            <div className="container" id="Contacto">
                 <div className="row force-to-bottom text-center">
                     <ul className="list-inline ml-auto h-100">
                         <li className="list-inline-item h-100"><a href="https://github.com/sebaeze"  target="_blank"><i className="fa fa-github"></i></a></li>

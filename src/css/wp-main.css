@@ -15,6 +15,9 @@
     min-height: 200px ;
     font-size: 40px ;
 }
+#footer i.fa{
+    font-size: 80px ;
+}
 /*
 * Fonts
 */
@@ -32,27 +35,15 @@
     .wp-body {
         height: 84vh ;
     }
-    .span-en-construccion {
-        font-size: 120px !important;
-        margin-left: 20%;
-    }
 }
 @media screen and (max-height: 800px){
     .wp-body {
         height: 80vh ;
     }
-    .span-en-construccion {
-        font-size: 100px !important;
-        margin-left: 20%;
-    }
 }
 @media screen and (max-height: 760px){
     .wp-body {
         height: 78vh ;
-    }
-    .span-en-construccion {
-        font-size: 80px !important;
-        margin-left: 20%;
     }
 }
 @media screen and (max-height: 660px){
@@ -66,48 +57,59 @@
     }
     .span-en-construccion {
         font-size: 80px !important;
-        margin-left: 20%;
     }
 }
 /*  */
-@media (max-width: 2500px) {
-    .wp-body span {
-        line-height: 70vh ;
-        font-size: 40px ;
-    }
-}
 @media (max-width: 1290px) {
-    .wp-body span {
-        line-height: 70vh ;
-        font-size: 40px ;
-    }
 }
 @media (max-width: 800px) {
-    .wp-body span {
-        line-height: 70vh ;
-        font-size: 20px ;
+    #footer i.fa{
+        font-size: 60px ;
+    }
+    .span-en-construccion {
+        line-height: 40vh !important;
+        font-size: 60px !important;
+    }
+    .wp-nombre {
+        word-wrap: break-word;
+        white-space: initial;
+        font-size: 30px !important;
+        line-height: 40px ;
+        text-align: left ;
     }
 }
 @media (max-width: 400px) {
-    .wp-body span {
-        line-height: 12vh ;
-        font-size: 25px ;
-    }
     .span-en-construccion {
+        margin-top: 15% ;
+        line-height: 10vh !important;
         font-size: 40px !important;
-        margin-left: 5%;
-        line-height: 8vh !important;
     }
     .wp-nombre {
         word-wrap: break-word;
         white-space: initial;
         font-size: 30px !important;
         line-height: normal ;
+        text-align: center ;
+    }
+    .wp-pestanias {
+        font-size: 16px !important;
+        line-height:  20px !important ;
     }
 }
 /* */
 .wp-nombre {
     word-wrap: break-word;
     white-space: initial;
-    font-size: inherit;
+    font-size: 34px !important;
+    font-weight: bolder !important ;
+}
+.span-en-construccion {
+    line-height: 70vh ;
+    font-size: 120px ;
+    width: 100% !important ;
+    text-align: center !important ;
+}
+.wp-pestanias {
+    font-size: 24px ;
+    line-height:  inherit ;
 }
