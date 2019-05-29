@@ -1,0 +1,191 @@
+
+C:\01 - IBM Cloud Bluemix environment\GitHub Repositorios\personal-web>CLS
+ECHO est� activado.
+
+C:\01 - IBM Cloud Bluemix environment\GitHub Repositorios\personal-web>echo  
+ECHO est� activado.
+
+C:\01 - IBM Cloud Bluemix environment\GitHub Repositorios\personal-web>echo  
+ECHO est� activado.
+
+C:\01 - IBM Cloud Bluemix environment\GitHub Repositorios\personal-web>SET cf_api=https://api.ng.bluemix.net 
+
+C:\01 - IBM Cloud Bluemix environment\GitHub Repositorios\personal-web>SET cf_region=us-south 
+
+C:\01 - IBM Cloud Bluemix environment\GitHub Repositorios\personal-web>SET cf_org=sebaeze@gmail.com 
+
+C:\01 - IBM Cloud Bluemix environment\GitHub Repositorios\personal-web>SET cf_space=dev 
+
+C:\01 - IBM Cloud Bluemix environment\GitHub Repositorios\personal-web>SET cf_app=andreoletti-webpage 
+
+C:\01 - IBM Cloud Bluemix environment\GitHub Repositorios\personal-web>SET cf_email=sebaeze@gmail.com 
+
+C:\01 - IBM Cloud Bluemix environment\GitHub Repositorios\personal-web>SET cf_password=ZXC@asdqwe123 
+"ibmcloud api https://api.ng.bluemix.net"
+Estableciendo un punto final de API en https://api.ng.bluemix.net...
+Correcto
+
+Punto final de la API: https://api.ng.bluemix.net
+"ibmcloud cf login -u sebaeze@gmail.com  -p ******** -o sebaeze@gmail.com  --no-iam"
+Punto final de la API: https://api.ng.bluemix.net
+Cloud Foundry de destino (https://api.ng.bluemix.net)
+
+Autenticando...
+Correcto
+
+Cuenta de destino Sebastian Andreoletti's Account (cc87a565b3aa4ee6a73849fcefecc38b)
+
+                                
+Punto final de la API:       https://api.ng.bluemix.net   
+Región:                      us-south   
+Usuario:                     sebaeze@gmail.com   
+Cuenta:                      Sebastian Andreoletti's Account (cc87a565b3aa4ee6a73849fcefecc38b)   
+Grupo de recursos:           No se ha establecido ningún grupo como destino, utilice 'ibmcloud target -g RESOURCE_GROUP'   
+Punto final de API de CF:    https://api.ng.bluemix.net (Versión de la API: 2.128.0)   
+Organización:                   
+Espacio:                        
+
+Consejo: Si está gestionando aplicaciones y servicios de Cloud Foundry
+- Utilice 'ibmcloud target --cf' para establecer como destino la organización o espacio de Cloud Foundry interactivamente, o utilice 'ibmcloud target --cf-api ENDPOINT -o ORG -s SPACE' para establecer como destino la organización o espacio.
+- Utilice 'ibmcloud cf' si desea ejecutar la CLI de Cloud Foundry con contexto de IBM Cloud CLI actual.
+
+"ibmcloud config --check-version=false"
+"ibmcloud target   -r us-south -s dev"
+Cambiado a región us-south
+
+Organización de destino sebaeze@gmail.com
+
+Espacio de destino dev
+
+
+                                
+Punto final de la API:       https://api.ng.bluemix.net   
+Región:                      us-south   
+Usuario:                     sebaeze@gmail.com   
+Cuenta:                      Sebastian Andreoletti's Account (cc87a565b3aa4ee6a73849fcefecc38b)   
+Grupo de recursos:           No se ha establecido ningún grupo como destino, utilice 'ibmcloud target -g RESOURCE_GROUP'   
+Punto final de API de CF:    https://api.ng.bluemix.net (Versión de la API: 2.128.0)   
+Organización:                sebaeze@gmail.com   
+Espacio:                     dev   
+"ibmcloud config --check-version=false"
+"ibmcloud cf logs andreoletti-webpage --recent"
+Invocando 'cf logs andreoletti-webpage --recent'...
+
+Retrieving logs for app [36;1mandreoletti-webpage[0m in org [36;1msebaeze@gmail.com[0m / space [36;1mdev[0m as [36;1msebaeze@gmail.com[0m...
+
+   2019-05-29T10:27:20.86-0300 [RTR/23] OUT www.sebastianandreoletti.com.ar - [2019-05-29T13:27:20.846+0000] "GET / HTTP/1.1" 502 0 67 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0" "10.186.136.37:12475" "169.62.205.250:61056" x_forwarded_for:"181.46.93.195, 10.186.136.37" x_forwarded_proto:"http" vcap_request_id:"d2a614c0-864c-4429-44d9-af4645199844" response_time:0.014517273 app_id:"dc22a896-16c5-4caf-abf3-7e5c67b152fc" app_index:"0" x_global_transaction_id:"6d6595795cee88b8a7ab58e7" true_client_ip:"-" x_b3_traceid:"e9aeab1b4ddc9c9b" x_b3_spanid:"e9aeab1b4ddc9c9b" x_b3_parentspanid:"-" b3:"e9aeab1b4ddc9c9b-e9aeab1b4ddc9c9b"
+   2019-05-29T10:27:20.86-0300 [RTR/23] OUT 
+   2019-05-29T10:27:21.11-0300 [RTR/21] OUT www.sebastianandreoletti.com.ar - [2019-05-29T13:27:21.104+0000] "GET /favicon.ico HTTP/1.1" 502 0 67 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0" "10.186.136.37:21968" "169.62.205.250:61056" x_forwarded_for:"181.46.93.195, 10.186.136.37" x_forwarded_proto:"http" vcap_request_id:"da825f7f-6e33-4c04-667a-9962879d631c" response_time:0.014665053 app_id:"dc22a896-16c5-4caf-abf3-7e5c67b152fc" app_index:"0" x_global_transaction_id:"6d6595795cee88b9a7ab5927" true_client_ip:"-" x_b3_traceid:"1edcb1b8047c137c" x_b3_spanid:"1edcb1b8047c137c" x_b3_parentspanid:"-" b3:"1edcb1b8047c137c-1edcb1b8047c137c"
+   2019-05-29T10:27:21.11-0300 [RTR/21] OUT 
+   2019-05-29T10:27:50.10-0300 [RTR/25] OUT andreoletti-webpage.mybluemix.net - [2019-05-29T13:27:50.085+0000] "GET / HTTP/1.1" 502 0 67 "-" "-" "10.171.2.125:49491" "169.62.205.250:61056" x_forwarded_for:"169.45.2.51, 10.171.2.125" x_forwarded_proto:"http" vcap_request_id:"4b3a0074-32db-4bcb-6d14-6636aaa2b624" response_time:0.01898848 app_id:"dc22a896-16c5-4caf-abf3-7e5c67b152fc" app_index:"0" x_global_transaction_id:"5c3f3acf5cee88d63f901e0f" true_client_ip:"-" x_b3_traceid:"bad25fa131cc8beb" x_b3_spanid:"bad25fa131cc8beb" x_b3_parentspanid:"-" b3:"bad25fa131cc8beb-bad25fa131cc8beb"
+   2019-05-29T10:27:50.10-0300 [RTR/25] OUT 
+   2019-05-29T10:27:50.24-0300 [RTR/19] OUT andreoletti-webpage.mybluemix.net - [2019-05-29T13:27:50.231+0000] "GET / HTTP/1.1" 502 0 67 "-" "-" "10.184.41.2:25697" "169.62.205.250:61056" x_forwarded_for:"169.50.77.22, 10.184.41.2" x_forwarded_proto:"http" vcap_request_id:"183402f4-6b3d-4fd8-7b3a-980568470f66" response_time:0.017031309 app_id:"dc22a896-16c5-4caf-abf3-7e5c67b152fc" app_index:"0" x_global_transaction_id:"2a9437b75cee88d660714eaf" true_client_ip:"-" x_b3_traceid:"31b7f9bacddfc47b" x_b3_spanid:"31b7f9bacddfc47b" x_b3_parentspanid:"-" b3:"31b7f9bacddfc47b-31b7f9bacddfc47b"
+   2019-05-29T10:27:50.24-0300 [RTR/19] OUT 
+   2019-05-29T10:27:50.54-0300 [RTR/25] OUT andreoletti-webpage.mybluemix.net - [2019-05-29T13:27:50.522+0000] "GET / HTTP/1.1" 502 0 67 "-" "-" "10.171.2.124:40702" "169.62.205.250:61056" x_forwarded_for:"168.1.81.212, 10.171.2.124" x_forwarded_proto:"http" vcap_request_id:"9484271c-11f7-4b0d-7e12-7daf70973273" response_time:0.018761825 app_id:"dc22a896-16c5-4caf-abf3-7e5c67b152fc" app_index:"0" x_global_transaction_id:"dccbb8d45cee88d66c44937f" true_client_ip:"-" x_b3_traceid:"1d2499f8dd13ed39" x_b3_spanid:"1d2499f8dd13ed39" x_b3_parentspanid:"-" b3:"1d2499f8dd13ed39-1d2499f8dd13ed39"
+   2019-05-29T10:27:50.54-0300 [RTR/25] OUT 
+   2019-05-29T10:36:56.66-0300 [API/22] OUT Updated app with guid dc22a896-16c5-4caf-abf3-7e5c67b152fc ({"state"=>"STOPPED"})
+   2019-05-29T10:36:56.67-0300 [CELL/0] OUT Cell dd1a71bb-904a-48dc-bb2a-a56b31d8e5af stopping instance cc7d73c7-0a46-4905-46a1-8fb7
+   2019-05-29T10:36:58.08-0300 [API/8] OUT Updated app with guid dc22a896-16c5-4caf-abf3-7e5c67b152fc ({"state"=>"STARTED"})
+   2019-05-29T10:36:58.96-0300 [CELL/0] OUT Cell f421f223-230e-4de2-b2a5-70feffa639be creating container for instance 2781ea2d-8a68-407a-7575-3687
+   2019-05-29T10:37:00.29-0300 [CELL/0] OUT Cell f421f223-230e-4de2-b2a5-70feffa639be successfully created container for instance 2781ea2d-8a68-407a-7575-3687
+   2019-05-29T10:37:02.11-0300 [CELL/SSHD/0] OUT Exit status 0
+   2019-05-29T10:37:07.86-0300 [CELL/0] OUT Starting health monitoring of container
+   2019-05-29T10:37:09.64-0300 [APP/PROC/WEB/0] OUT > personal-web@0.1.0 start /home/vcap/app
+   2019-05-29T10:37:09.64-0300 [APP/PROC/WEB/0] OUT > node server.js
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT privateKey: -----BEGIN RSA PRIVATE KEY-----
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT MIIEogIBAAKCAQEAtY0tcUBZi+neT6sKzgLZMrryTcttHM//UURQwjU43flM6lGS
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT TOJy1+o39JQsI2NE0rxAHytwOmnBFo6qz59XSE6ndG4kOEhrbpL3lGOvzsVSwsje
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT ItpgNkrMRmimmqE4TZctTEMN/yPd675Pw+QvlzSfywTR0MjQfEKgxnrSanqijnb3
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT UA4tgC4ynpKVBZFJySaLBsa7yH01FJs0waW1MgDZna3FY1j08HO58eOLX6aybelx
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT IQ95rSVOlFDD3q8LoxC9EqVJ4AS66hhdsP8Lil4S0ung3cDOVxd2sR2OGMFtzWw1
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT 6efRuVedRMtMorO304Kl881nijtwzLA8f5XG2QIDAQABAoIBACx1MGIRyHvXHr3y
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT nBg7oVVnayt6u7L5CkQrzvznzI+q21dr90AFmereq6okWLSnu/RA7hDT8c0UFZkB
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT AboLAnQt8pqz2AHCVjCDI8Z+LNCdCHmzd5YgVLwmz+QT/2xRO3jgotKQfw5yCYeP
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT mHfXWoIT/GdaPEj8y/UJ2dYQwJMbICLG0bPNBumQxy3BXVepe1S1S+AZW1587xHt
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT GA5r8jffUQLq2vz2dU1h48OVvHagK+m9hw5vID94fqNF5I93P9NmqbqwBU3fkFDF
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT /q5VZtpn2fjLMesb8J0GjC8i9S1zi9wecvshlF1nAggpA6CJgWoGSiqwnNd64AZj
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT 4qVusgkCgYEA4NIdteEFFUVigfWMRYcPuQCoXun9o264rjSoC+2LxuoDAWPsgafh
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT bwJkQshhTdhqCE4W5ZIs8cXi8rWdRxFP+cW357jABeR3X3u5kpuVunVQwmA+qXjG
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT eWPR+Z29CJaCQs5zwNdaS2E8G+Ma6hX1UFcco1ljIpgnA4PK2KiihbUCgYEAzrrb
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT nuqb+ViGyHWm1JQNNuBtIGvq/i0tkUkVo6XhoJFUJyJ5w0jY4TtRs81/6R9RXHcS
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT J9Q9X2J3QsH82AQYtdxyJ5F9tSUyMMNZBP+zK3y+D3l8SIOA65kiU+rhq0SM2PZF
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT ny78VTzAnSy2fWdPpQ8N/nCsVSKTyvDL6iW+8xUCgYB6HCXe/9VO9FzI0aHasb0s
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT ctsAkn8dIapVlGwh7mgZJklzm959nb2oGdhzHXscWQteb2uoTXjz6NOXmGVQkGqr
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT 82QsDADgMnNT/VOR+cedetLegIAIdHz4uer2dWKTI4yk1JWyjEWS48FONFAODNct
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT R+NaJdbel125Xv/yJcYAcQKBgFs6eJqrm8MwfuJNkR60axRxe5bYKO6cD0TTBLqg
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT BG6wU3ulqig0qIjUfZykLjM5P9VXMmrjLWY/dLPAGY1WWXU/4Bx4Bwp+bKS6QDmF
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT gZLKTLFVgjQZ3DWb8VspBwdmi+Ve4KB7wpz232U9CxdSFQKZHyrOnC5BwQjItKQS
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT ni51AoGAKiPObj5xcXUn98pR+6WdCGqVv34wcMeOYA3XkbT+BLULW9/8mhGXQP1x
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT 89yMI+3lI8mI/udZOSeL40iVBSmvUm8CGMwMTs2j16KFfqWifSVNQilbEvpWH93u
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT SVm4KIMXX2notsiZDgmIc+Yq3CNPZ8GqsT0XZ6PhHXXp+uhPEq0=
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT -----END RSA PRIVATE KEY-----;
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT fullChain: -----BEGIN CERTIFICATE-----
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT MIIFbTCCBFWgAwIBAgISA1+9Ut6xrQyCPviDf3xPPwg9MA0GCSqGSIb3DQEBCwUA
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT MEoxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MSMwIQYDVQQD
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT ExpMZXQncyBFbmNyeXB0IEF1dGhvcml0eSBYMzAeFw0xOTA1MjkxMTA4MjJaFw0x
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT OTA4MjcxMTA4MjJaMCYxJDAiBgNVBAMTG3NlYmFzdGlhbmFuZHJlb2xldHRpLmNv
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT bS5hcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALWNLXFAWYvp3k+r
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT Cs4C2TK68k3LbRzP/1FEUMI1ON35TOpRkkzictfqN/SULCNjRNK8QB8rcDppwRaO
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT qs+fV0hOp3RuJDhIa26S95Rjr87FUsLI3iLaYDZKzEZoppqhOE2XLUxDDf8j3eu+
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT T8PkL5c0n8sE0dDI0HxCoMZ60mp6oo5291AOLYAuMp6SlQWRSckmiwbGu8h9NRSb
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT NMGltTIA2Z2txWNY9PBzufHji1+msm3pcSEPea0lTpRQw96vC6MQvRKlSeAEuuoY
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT XbD/C4peEtLp4N3AzlcXdrEdjhjBbc1sNenn0blXnUTLTKKzt9OCpfPNZ4o7cMyw
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT PH+VxtkCAwEAAaOCAm8wggJrMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggr
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT BgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUIp6OmuWR
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT pFCJy2o8e09QK+LmZxowHwYDVR0jBBgwFoAUqEpqYwR93brm0Tm3pkVl7/Oo7KEw
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT bwYIKwYBBQUHAQEEYzBhMC4GCCsGAQUFBzABhiJodHRwOi8vb2NzcC5pbnQteDMu
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT bGV0c2VuY3J5cHQub3JnMC8GCCsGAQUFBzAChiNodHRwOi8vY2VydC5pbnQteDMu
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT bGV0c2VuY3J5cHQub3JnLzAmBgNVHREEHzAdghtzZWJhc3RpYW5hbmRyZW9sZXR0
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT aS5jb20uYXIwTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAm
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT BggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEDBgorBgEE
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT AdZ5AgQCBIH0BIHxAO8AdgB0ftqDMa0zEJEhnM4lT0Jwwr/9XkIgCMY3NXnmEHvM
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT VgAAAWsDfcPMAAAEAwBHMEUCIQCiAgJdu1puj7qhxu+qBUqi2OO2WDtKO755NHpK
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT Ce7IpAIgflryW37FzyFjrB/wxgH/fm+KGYQ3xiOCoG0FywsoX9oAdQApPFGWVMg5
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT ZbqqUPxYB9S3b79Yeily3KTDDPTlRUf0eAAAAWsDfcPpAAAEAwBGMEQCIDdnWDNr
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT bqTrVWN9g76mnF6SMJCxteDP3p2OKjRdLICUAiBIkdl7L6DeqBRZRTLIzhnAEUSs
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT 5pK6LUlGoT1bREhw/TANBgkqhkiG9w0BAQsFAAOCAQEAFAX8iQRu7y87SGK0BUGA
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT BTSwJ7FUfIQoEneOadsR39SSbjZJJFoKq2jAKKqgxycmO1P6y+STiSNsFwTBysQJ
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT mftHvU32LY8DgUbXgOW9/OBZum4F/XW+12sBUuxM+Pf443sRVDnzCeW8kPlVkZ2G
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT Rszd/ty/+L3n/r0pFFIF4dnBcCGGfLTcXGdqpO0aNe4QcD8mRQMU3gfpc2ZXxMCB
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT 4TrK0JfZOslWyNVQ7a8qMUJUliqwUI7bqWVXc9ne7nVwWjGZSYsOTATEN0gTaxAZ
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT oOg5pJTcdn0iI1DVUgXrUlhKPWyOb/J3UM5SQYdMhEntJDgxf3rhAahDrKRCYmGe
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT Ew==
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT -----END CERTIFICATE-----
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT -----BEGIN CERTIFICATE-----
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT MIIEkjCCA3qgAwIBAgIQCgFBQgAAAVOFc2oLheynCDANBgkqhkiG9w0BAQsFADA/
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT DkRTVCBSb290IENBIFgzMB4XDTE2MDMxNzE2NDA0NloXDTIxMDMxNzE2NDA0Nlow
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT SjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUxldCdzIEVuY3J5cHQxIzAhBgNVBAMT
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT GkxldCdzIEVuY3J5cHQgQXV0aG9yaXR5IFgzMIIBIjANBgkqhkiG9w0BAQEFAAOC
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT AQ8AMIIBCgKCAQEAnNMM8FrlLke3cl03g7NoYzDq1zUmGSXhvb418XCSL7e4S0EF
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT q6meNQhY7LEqxGiHC6PjdeTm86dicbp5gWAf15Gan/PQeGdxyGkOlZHP/uaZ6WA8
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT SMx+yk13EiSdRxta67nsHjcAHJyse6cF6s5K671B5TaYucv9bTyWaN8jKkKQDIZ0
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT Z8h/pZq4UmEUEz9l6YKHy9v6Dlb2honzhT+Xhq+w3Brvaw2VFn3EK6BlspkENnWA
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT a6xK8xuQSXgvopZPKiAlKQTGdMDQMc2PMTiVFrqoM7hD8bEfwzB/onkxEz0tNvjj
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT /PIzark5McWvxI0NHWQWM6r6hCm21AvA2H3DkwIDAQABo4IBfTCCAXkwEgYDVR0T
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT AQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8EBAMCAYYwfwYIKwYBBQUHAQEEczBxMDIG
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT CCsGAQUFBzABhiZodHRwOi8vaXNyZy50cnVzdGlkLm9jc3AuaWRlbnRydXN0LmNv
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT bTA7BggrBgEFBQcwAoYvaHR0cDovL2FwcHMuaWRlbnRydXN0LmNvbS9yb290cy9k
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT c3Ryb290Y2F4My5wN2MwHwYDVR0jBBgwFoAUxKexpHsscfrb4UuQdf/EFWCFiRAw
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT VAYDVR0gBE0wSzAIBgZngQwBAgEwPwYLKwYBBAGC3xMBAQEwMDAuBggrBgEFBQcC
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT ARYiaHR0cDovL2Nwcy5yb290LXgxLmxldHNlbmNyeXB0Lm9yZzA8BgNVHR8ENTAz
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT MDGgL6AthitodHRwOi8vY3JsLmlkZW50cnVzdC5jb20vRFNUUk9PVENBWDNDUkwu
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT Y3JsMB0GA1UdDgQWBBSoSmpjBH3duubRObemRWXv86jsoTANBgkqhkiG9w0BAQsF
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT AAOCAQEA3TPXEfNjWDjdGBX7CVW+dla5cEilaUcne8IkCJLxWh9KEik3JHRRHGJo
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT uM2VcGfl96S8TihRzZvoroed6ti6WqEBmtzw3Wodatg+VyOeph4EYpr/1wXKtx8/
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT wApIvJSwtmVi4MFU5aMqrSDE6ea73Mj2tcMyo5jMd6jmeWUHK8so/joWUoHOUgwu
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT X4Po1QYz+3dszkDqMp4fklxBwXRsW10KXzPMTZ+sOPAveyxindmjkW8lGy+QsRlG
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT PfZ+G6Z6h7mjem0Y+iWlkYcV4PIWL1iwBi8saCbGS5jN2p8M+X+Q7UNKEkROb3N6
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT KOqkqm57TH2H3eDJAkSnh6/DNFu0Qg==
+   2019-05-29T10:37:09.93-0300 [APP/PROC/WEB/0] OUT -----END CERTIFICATE-----;
+   2019-05-29T10:37:09.96-0300 [APP/PROC/WEB/0] OUT .....https server running on port: 8080;
+   2019-05-29T10:37:11.95-0300 [CELL/0] OUT Container became healthy
+   2019-05-29T10:37:13.08-0300 [CELL/0] OUT Cell dd1a71bb-904a-48dc-bb2a-a56b31d8e5af destroying container for instance cc7d73c7-0a46-4905-46a1-8fb7
+   2019-05-29T10:37:13.44-0300 [PROXY/0] OUT Exit status 137
+   2019-05-29T10:37:15.25-0300 [CELL/0] OUT Cell dd1a71bb-904a-48dc-bb2a-a56b31d8e5af successfully destroyed container for instance cc7d73c7-0a46-4905-46a1-8fb7
+   2019-05-29T10:39:18.43-0300 [RTR/9] OUT andreoletti-webpage.mybluemix.net - [2019-05-29T13:39:18.390+0000] "GET / HTTP/1.1" 502 0 67 "https://cloud.ibm.com/apps/dc22a896-16c5-4caf-abf3-7e5c67b152fc?paneId=overview&ace_config=%7B%22region%22%3A%22us-south%22%2C%22crn%22%3A%22crn%3Av1%3Abluemix%3Apublic%3Acf%3Aus-south%3As%2F2a5f4225-6609-429f-a211-ca6d3739b071%3A%3Acf-application%3Adc22a896-16c5-4caf-abf3-7e5c67b152fc%22%2C%22resource_id%22%3A%22dc22a896-16c5-4caf-abf3-7e5c67b152fc%22%2C%22orgGuid%22%3A%22bea52af1-91db-45d4-a3e0-506e844a955d%22%2C%22spaceGuid%22%3A%222a5f4225-6609-429f-a211-ca6d3739b071%22%2C%22redirect%22%3A%22https%3A%2F%2Fcloud.ibm.com%2Fresources%22%2C%22bluemixUIVersion%22%3A%22v6%22%7D&env_id=ibm:yp:us-south" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0" "10.171.2.125:43393" "169.62.205.253:61368" x_forwarded_for:"181.46.93.195, 10.171.2.125" x_forwarded_proto:"https" vcap_request_id:"33c93d98-64d4-4260-5132-515158e23d1c" response_time:0.04230734 app_id:"dc22a896-16c5-4caf-abf3-7e5c67b152fc" app_index:"0" x_global_transaction_id:"5c3f3acf5cee8b86401f7a1f" true_client_ip:"-" x_b3_traceid:"1c3f11715aa4ad9f" x_b3_spanid:"1c3f11715aa4ad9f" x_b3_parentspanid:"-" b3:"1c3f11715aa4ad9f-1c3f11715aa4ad9f"
+   2019-05-29T10:39:18.43-0300 [RTR/9] OUT 
+   2019-05-29T10:39:18.95-0300 [RTR/9] OUT andreoletti-webpage.mybluemix.net - [2019-05-29T13:39:18.720+0000] "GET /favicon.ico HTTP/1.1" 502 0 67 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0" "10.171.2.124:48303" "169.62.205.253:61368" x_forwarded_for:"181.46.93.195, 10.171.2.124" x_forwarded_proto:"https" vcap_request_id:"ddd8badc-76c5-492a-4631-6c34ac7f7941" response_time:0.234678629 app_id:"dc22a896-16c5-4caf-abf3-7e5c67b152fc" app_index:"0" x_global_transaction_id:"dccbb8d45cee8b86becf1e1d" true_client_ip:"-" x_b3_traceid:"594f285f4723d0c5" x_b3_spanid:"594f285f4723d0c5" x_b3_parentspanid:"-" b3:"594f285f4723d0c5-594f285f4723d0c5"
+   2019-05-29T10:39:18.95-0300 [RTR/9] OUT 
+ECHO est� desactivado.
+Presione una tecla para continuar . . . 
