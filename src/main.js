@@ -20,6 +20,6 @@ const App = () =>{
 };
 //
 ReactDOM.render(
-  <App />,
+  <App className="container-fluid" />,
   document.getElementById("app")
 );
