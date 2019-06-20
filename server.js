@@ -19,7 +19,13 @@ app.use (function (req, res, next) {
   }
 });
 */
+//
+app.use(require('express-naked-redirect')({
+  subDomain: 'www',
+  protocol: 'https'
+}))
 // set up a route to redirect http to https
+/*
 app.use(function(req, res, next) {
   if (req.secure || String(req.headers.host).indexOf('localhost')!=-1 ) {
       next();
@@ -28,6 +34,7 @@ app.use(function(req, res, next) {
       res.redirect('https://' + req.headers.host + req.url);
   }
 }) ;
+*/
 //
 //
 app.use(express.static(path.join(__dirname, 'dist')));

@@ -1,0 +1,1 @@
+./certbot-auto certonly --manual --preferred-challenges dns --server https://acme-v02.api.letsencrypt.org/directory --email sebaeze@gmail.com --domains *.sebastianandreoletti.com.ar --domains sebastianandreoletti.com.ar --no-bootstrap
